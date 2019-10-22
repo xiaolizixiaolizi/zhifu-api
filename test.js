@@ -1,13 +1,3 @@
-let str='1'
-let num=parseInt(str)
-console.log(num,str)
-
-let obj={
-  index(){
-
-  },
-  a:10,
-  fn:()=>{
-
-  }
-}
+let obj = { name: 'zs', age: 10, gender: 'male' ,_v:104545}
+let {_v,...rest}=obj
+console.log(rest) //{ name: 'zs', age: 10, gender: 'male' }
